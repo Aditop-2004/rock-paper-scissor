@@ -1,190 +1,209 @@
 <!--hello-->
+<!--bye-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" />
     <style>
-        #all
-        {
-            background-color: aquamarine;
-        }
-        #heading
-        {
-            font-size: 60px;
-            text-align: center;
-            color: #BD4291;
-            text-decoration: wavy;
-            text-decoration: underline;
-            text-decoration-color: black;
-            text-decoration-thickness: 3px;
-        }
-        #subheading
-        {
-            font-size: 30px;
-            color:#F94C66;
-            font-style: italic;
-            text-align: left;
-        }
-        #box
-        {
-            width:fit-content;
-            height:fit-content;
-            background-color: cornsilk;
-            border-radius: 10px;
-        }
-        #rule
-        {
-            font-size: 20px;
-        }
-        #count-down
-        {
-            border: 5px solid red;
-            border-radius: 10px;
-        }
-        .buttons
-        {
-            height: 60px;
-            width:60px;
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-            background-color: #FFCF96;
-            border-radius: 10px;
-        }
-        .f
-        {
-            font-size: 20px;
-            color: #d74220;
-            font-weight: bold;
-        }
-        #reaction
-        {
-            width:300px;
-            height:300px;
-            border: 10px solid red;
-            border-radius: 20px;
-        }
+      #all {
+        background-color: aquamarine;
+      }
+      #heading {
+        font-size: 60px;
+        text-align: center;
+        color: #bd4291;
+        text-decoration: wavy;
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 3px;
+      }
+      #subheading {
+        font-size: 30px;
+        color: #f94c66;
+        font-style: italic;
+        text-align: left;
+      }
+      #box {
+        width: fit-content;
+        height: fit-content;
+        background-color: cornsilk;
+        border-radius: 10px;
+      }
+      #rule {
+        font-size: 20px;
+      }
+      #count-down {
+        border: 5px solid red;
+        border-radius: 10px;
+      }
+      .buttons {
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        background-color: #ffcf96;
+        border-radius: 10px;
+      }
+      .f {
+        font-size: 20px;
+        color: #d74220;
+        font-weight: bold;
+      }
+      #reaction {
+        width: 300px;
+        height: 300px;
+        border: 10px solid red;
+        border-radius: 20px;
+      }
     </style>
     <title>Rock Paper Scissors</title>
   </head>
   <body id="all">
-
     <h1 id="heading">Rock Paper Scissors</h1>
 
     <h2 id="subheading">A fun game made by Aditya Technologies</h2>
     <hr />
 
-    <h3 style="color: darkred; font-size: 25px;"><u>Rules</u></h3>
+    <h3 style="color: darkred; font-size: 25px"><u>Rules</u></h3>
 
     <div id="box">
-    <ul id="rule">
+      <ul id="rule">
         <li>The game will consist of 5 rounds.</li>
         <li>In each round,you will get 3 choices:</li>
         <ol type="1">
-            <li>Rock</li>
-            <li>Paper</li>
-            <li>Scissor</li>
+          <li>Rock</li>
+          <li>Paper</li>
+          <li>Scissor</li>
         </ol>
         <li>Rock will defeat scissors.</li>
         <li>Scissor will defeat paper.</li>
         <li>Paper will defeat Rock.</li>
-        <li>After every 5 rounds ,you will get to know the winner.Then you can again start the new game.</li>
-    </ul>
+        <li>
+          After every 5 rounds ,you will get to know the winner.Then you can
+          again start the new game.
+        </li>
+      </ul>
     </div>
-    <h3 style="font-size: 30px;color:blueviolet">Are you excited for the battle?</h3>
-    <img id="count-down" src="https://media.tenor.com/7HFPLm7Rl8oAAAAC/321-count-down.gif" />
+    <h3 style="font-size: 30px; color: blueviolet">
+      Are you excited for the battle?
+    </h3>
+    <img
+      id="count-down"
+      src="https://media.tenor.com/7HFPLm7Rl8oAAAAC/321-count-down.gif"
+    />
 
-    <p style="font-size: 30px;">R ➨ Rock <button class="buttons" onclick="userchoice='Rock';generatecchoice();scoreupdate();printchoice();games++;if(games==5)finalstatement();">R</button></p>
+    <p style="font-size: 30px">
+      R ➨ Rock
+      <button
+        class="buttons"
+        onclick="userchoice='Rock';generatecchoice();scoreupdate();printchoice();games++;if(games==5)finalstatement();"
+      >
+        R
+      </button>
+    </p>
 
-    <p style="font-size: 30px;">P ➨ Paper <button class="buttons" onclick="userchoice='Paper';generatecchoice();scoreupdate();printchoice();games++;if(games==5)finalstatement();">P</button></p>
+    <p style="font-size: 30px">
+      P ➨ Paper
+      <button
+        class="buttons"
+        onclick="userchoice='Paper';generatecchoice();scoreupdate();printchoice();games++;if(games==5)finalstatement();"
+      >
+        P
+      </button>
+    </p>
 
-    <p style="font-size: 30px;">S ➨ Scissor <button class="buttons" onclick="userchoice='Scissors';generatecchoice();scoreupdate();printchoice();games++;if(games==5)finalstatement();">S</button></p>
+    <p style="font-size: 30px">
+      S ➨ Scissor
+      <button
+        class="buttons"
+        onclick="userchoice='Scissors';generatecchoice();scoreupdate();printchoice();games++;if(games==5)finalstatement();"
+      >
+        S
+      </button>
+    </p>
 
     <p id="choice" class="f"></p>
     <p id="score" class="f"></p>
     <p id="res" class="f"></p>
-    <img id="reaction">
+    <img id="reaction" />
 
     <script>
-        var image = document.getElementById("reaction");
+      var image = document.getElementById("reaction");
       let userchoice;
       let computerchoice;
       let userscore = 0;
       let computerscore = 0;
       let winner;
-      let games=0;
+      let games = 0;
       function printchoice() {
-        var c=document.getElementById("choice");
-        c.innerHTML="Your choice is "+userchoice +"<br>Computer choice is "+computerchoice;
+        var c = document.getElementById("choice");
+        c.innerHTML =
+          "Your choice is " +
+          userchoice +
+          "<br>Computer choice is " +
+          computerchoice;
 
         var para = document.getElementById("score");
         para.innerHTML =
-        "Your current score is " + userscore +"<br> Computer current score is " + computerscore;
+          "Your current score is " +
+          userscore +
+          "<br> Computer current score is " +
+          computerscore;
       }
-      function generatecchoice()
-      {
-        let x=Math.floor(Math.random()*3);
-        if(x==0) computerchoice='Rock';
-        if(x==1) computerchoice='Paper';
-        if(x==2) computerchoice='Scissors';
+      function generatecchoice() {
+        let x = Math.floor(Math.random() * 3);
+        if (x == 0) computerchoice = "Rock";
+        if (x == 1) computerchoice = "Paper";
+        if (x == 2) computerchoice = "Scissors";
       }
-      function scoreupdate()
-      {
-        if(userchoice=='Rock')
-        {
-            if(computerchoice=='Scissors')
-            {
-                userscore++;
-                image.src="https://media3.giphy.com/media/eKh7YKNLAElaXK2gTe/giphy.gif?cid=ecf05e47j1q8xw6loa1f0h6ztymbg696uwx1qjisb63d163u&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-            }
-            else if(computerchoice=='Paper')
-            {
-                computerscore++;
-                image.src="https://media4.giphy.com/media/QxROv0gXXFhPy2eZLx/giphy.gif?cid=ecf05e47zpkbm36318txwregimi8vhlxhgp3c4u5jr2772gq&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-            }
-        }
-        else if(userchoice=='Paper')
-        {
-            if(computerchoice=='Rock')
-            {
-                userscore++;
-                image.src="https://media4.giphy.com/media/JmsBX4IGsu7D3rKvnq/giphy.gif?cid=ecf05e47yuatwjss1mfcmm3gn9ieoe2ias5k3x8mx3b8jxrw&ep=v1_gifs_related&rid=giphy.gif&ct=g";
-            }
-            else if(computerchoice=='Scissors')
-            {
-                computerscore++;
-                image.src="https://media2.giphy.com/media/KdrE2HXmQXmpoVBQLq/giphy.gif?cid=ecf05e47dwcy0pugbxma34f691s4nf7ghikhdv06eina4slq&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-            }
-        }
-        else
-        {
-            if(computerchoice=='Paper')
-            {
-                userscore++;
-                image.src="https://media1.giphy.com/media/gdxCEXwnCkw7xhpaNt/giphy.gif?cid=ecf05e47dwcy0pugbxma34f691s4nf7ghikhdv06eina4slq&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-            }
-            else if(computerchoice=='Rock')
-            {
-                computerscore++;
-                image.src="https://media2.giphy.com/media/l0MYT0fzVOisO2tz2/giphy.gif?cid=ecf05e47j1q8xw6loa1f0h6ztymbg696uwx1qjisb63d163u&ep=v1_gifs_search&rid=giphy.gif&ct=g";
-            }
+      function scoreupdate() {
+        if (userchoice == "Rock") {
+          if (computerchoice == "Scissors") {
+            userscore++;
+            image.src =
+              "https://media3.giphy.com/media/eKh7YKNLAElaXK2gTe/giphy.gif?cid=ecf05e47j1q8xw6loa1f0h6ztymbg696uwx1qjisb63d163u&ep=v1_gifs_search&rid=giphy.gif&ct=g";
+          } else if (computerchoice == "Paper") {
+            computerscore++;
+            image.src =
+              "https://media4.giphy.com/media/QxROv0gXXFhPy2eZLx/giphy.gif?cid=ecf05e47zpkbm36318txwregimi8vhlxhgp3c4u5jr2772gq&ep=v1_gifs_search&rid=giphy.gif&ct=g";
+          }
+        } else if (userchoice == "Paper") {
+          if (computerchoice == "Rock") {
+            userscore++;
+            image.src =
+              "https://media4.giphy.com/media/JmsBX4IGsu7D3rKvnq/giphy.gif?cid=ecf05e47yuatwjss1mfcmm3gn9ieoe2ias5k3x8mx3b8jxrw&ep=v1_gifs_related&rid=giphy.gif&ct=g";
+          } else if (computerchoice == "Scissors") {
+            computerscore++;
+            image.src =
+              "https://media2.giphy.com/media/KdrE2HXmQXmpoVBQLq/giphy.gif?cid=ecf05e47dwcy0pugbxma34f691s4nf7ghikhdv06eina4slq&ep=v1_gifs_search&rid=giphy.gif&ct=g";
+          }
+        } else {
+          if (computerchoice == "Paper") {
+            userscore++;
+            image.src =
+              "https://media1.giphy.com/media/gdxCEXwnCkw7xhpaNt/giphy.gif?cid=ecf05e47dwcy0pugbxma34f691s4nf7ghikhdv06eina4slq&ep=v1_gifs_search&rid=giphy.gif&ct=g";
+          } else if (computerchoice == "Rock") {
+            computerscore++;
+            image.src =
+              "https://media2.giphy.com/media/l0MYT0fzVOisO2tz2/giphy.gif?cid=ecf05e47j1q8xw6loa1f0h6ztymbg696uwx1qjisb63d163u&ep=v1_gifs_search&rid=giphy.gif&ct=g";
+          }
         }
       }
-      function finalstatement()
-      {
-        var r=document.getElementById("res");
-        
-        if (userscore > computerscore) choice.textContent = "You won the game.Well done!!!";
-      else if (userscore < computerscore)
-      choice.textContent = "You lose the game.Better luck next time.";
-      else choice.textContent = "A nail-biting game.Its a draw.";
+      function finalstatement() {
+        var r = document.getElementById("res");
 
-      userscore=0;
-      computerscore=0;
-      games=0;
-    }
-      
+        if (userscore > computerscore)
+          choice.textContent = "You won the game.Well done!!!";
+        else if (userscore < computerscore)
+          choice.textContent = "You lose the game.Better luck next time.";
+        else choice.textContent = "A nail-biting game.Its a draw.";
+
+        userscore = 0;
+        computerscore = 0;
+        games = 0;
+      }
     </script>
   </body>
 </html>
